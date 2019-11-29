@@ -66,12 +66,24 @@
 
         <div id="navbarNavDropdown" class="collapse navbar-collapse">
         <ul id="main-menu" class="navbar-nav">
-        	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item active menu-item-574 nav-item"><a title="Home" href="https://www.neurocat.ai/" class="nav-link">Home</a></li>
+        	{% for title, link in MENUITEMS %}
+                 {% if 'Contact' == title %}
+                 	 <li class="btn menu-item"><a href="{{ link }}" class="nav-link">{{ title }}</a></li>
+                {% else %}
+                	 <li class="menu-item"><a href="{{ link }}" class="nav-link">{{ title }}</a></li>
+                {% endif %}
+               
+            {% endfor %}
+        	<!--
+        	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 
+        	current_page_item active menu-item-574 nav-item"><a title="Home" href="https://www.neurocat.ai/" class="nav-link">Home</a></li>
 			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-578 nav-item"><a title="Products" href="https://www.neurocat.ai/service/" class="nav-link">Products</a></li>
 			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570 nav-item"><a title="About" href="https://www.neurocat.ai/about/" class="nav-link">About</a></li>
 			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-579 nav-item"><a title="News" href="https://www.neurocat.ai/news/" class="nav-link">News</a></li>
 			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-571 nav-item"><a title="Jobs" href="https://www.neurocat.ai/jobs/" class="nav-link">Jobs</a></li>
-			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-569" class="btn menu-item menu-item-type-custom menu-item-object-custom menu-item-569 nav-item"><a title="Contact" href="#" class="nav-link">Contact</a></li></ul>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-569" class="btn menu-item menu-item-type-custom menu-item-object-custom menu-item-569 nav-item"><a title="Contact" href="#" class="nav-link">Contact</a></li>
+		    -->
+		</ul>
 
 		</div>                
             </div><!-- .container -->
