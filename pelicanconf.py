@@ -14,7 +14,7 @@ DEFAULT_LANG = 'en'
 
 MENUITEMS = (
     ('Home', '/index.html'),
-    ('Products', '/pages/service.html'),
+    ('Products', 'pages/service.html'),
     ('About', '/pages/about.html'),
     ('News', '/category/neurocat-news.html'),
     ('Jobs', '/pages/jobs.html'),
