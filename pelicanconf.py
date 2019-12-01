@@ -21,6 +21,14 @@ MENUITEMS = (
     ('Contact','#')
 )
 
+
+FOOTERITEMS = (
+    ('Site Notice [ENG]', '/index.html'),
+    ('Site Notice [DE]', '/pages/service.html'),
+    ('Privacy Policy [ENG]', '/pages/about.html'),
+    ('Privacy Policy [DE]', '/category/neurocat-news.html')
+)
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
